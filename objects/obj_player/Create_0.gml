@@ -58,3 +58,14 @@ movement_free = function() {
 	move(_spd, _dir);
 	
 }
+
+
+check_caught = function() {
+	
+	if (place_meeting(x, y, obj_enemy_parent)) {
+		
+		player_restart_failure();
+		
+	}
+	
+}
