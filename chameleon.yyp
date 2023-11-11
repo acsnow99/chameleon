@@ -42,6 +42,7 @@
     {"id":{"name":"spr_tileset_collision","path":"sprites/spr_tileset_collision/spr_tileset_collision.yy",},},
     {"id":{"name":"scr_player_restart_failure","path":"scripts/scr_player_restart_failure/scr_player_restart_failure.yy",},},
     {"id":{"name":"spr_respawn_trigger","path":"sprites/spr_respawn_trigger/spr_respawn_trigger.yy",},},
+    {"id":{"name":"obj_ctrl_ability","path":"objects/obj_ctrl_ability/obj_ctrl_ability.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_ctrl_inputs","path":"objects/obj_ctrl_inputs/obj_ctrl_inputs.yy",},},
     {"id":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},},
