@@ -21,6 +21,12 @@ depth = -1;
 _x = 0;
 _y = 0;
 
+cam_spd = 500;
+focus_obj = obj_player;
+
+
+global.levels_initiated = false;
+
 
 cam_reset = function() {
 	
@@ -28,6 +34,79 @@ cam_reset = function() {
 	global.view_width = global.default_view_width;
 	global.view_height = global.default_view_height;
 	focus_obj = obj_player;
-	focus_quick = true;
+	
+}
+
+
+
+levels_init = function() {
+	
+	global.level_count = instance_number(obj_level_frame) - 1;
+
+	for (var i = 0; i <= global.level_count; i++) {
+		
+		/*
+		var o = i;
+		
+		#region sorting out where the level being looked at is
+		var p = 0;
+		
+		for (var e = 0; e > 1; e--) {
+		
+			if (o >= map_width) {
+			
+				o -= map_width;
+				p++;
+			
+			}
+			else {
+				
+				e = 3;
+				
+			}
+			
+		}
+		#endregion
+		
+		
+		var _x = o * level_width;
+		var _y = p * level_height;
+		*/
+	
+		var _this_frame = instance_find(obj_level_frame, i);
+	
+		//mins and maxes for each level's camera reach
+		global.levels[i, 0] = _this_frame.x;
+		global.levels[i, 1] = global.levels[i, 0] + _this_frame.sprite_width;
+		global.levels[i, 2] = _this_frame.y;
+		global.levels[i, 3] = global.levels[i, 2] + _this_frame.sprite_height;
+	
+	
+	}
+	
+	return true;
+
+}
+
+level_seek = function(_focusx, _focusy) {
+	
+	for (var i = 0; i < instance_number(obj_level_frame); i++) {
+		
+		var _min_x = global.levels[i, 0];
+		var _max_x = global.levels[i, 1];
+		
+		var _min_y = global.levels[i, 2];
+		var _max_y = global.levels[i, 3];
+		
+		if (_focusx >= _min_x && _focusx <= _max_x && _focusy >= _min_y && _focusy <= _max_y) {
+			
+			return i;
+			exit;
+		
+		}
+		
+	}
+	
+	return -1;
 	
 }
