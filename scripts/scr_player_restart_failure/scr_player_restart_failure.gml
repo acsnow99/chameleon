@@ -9,5 +9,6 @@ function player_restart_failure() {
 		x = global.respawn_x;
 		y = global.respawn_y;
 	}
+	global.current_ability = ABILITY.NONE;
 
 }
