@@ -2,6 +2,7 @@
 enum MOVEMENT_STATES {
 	
 	FREE_MOVEMENT,
+	USE_ABILITY,
 	LENGTH
 	
 }
@@ -16,16 +17,19 @@ enum DIRECTIONS {
 	
 }
 
-
 movement_state = MOVEMENT_STATES.FREE_MOVEMENT;
-move_speed = 600;
+
+sprite_index = spr_player;
+global.current_ability = ABILITY.NONE;
 
 
-
+get_move_speed = function() { 
+	return global.current_ability == ABILITY.ELECTRICITY ? 750 : 600;
+}
 
 movement_free = function() {
 	
-	var _spd = move_speed * global.dt_steady;
+	var _spd = get_move_speed() * global.dt_steady;
 	var _xinput = 0;
 	var _yinput = 0;
 	for (var i = 0; i < DIRECTIONS.LENGTH; i++;) {
@@ -59,6 +63,24 @@ movement_free = function() {
 	
 }
 
+use_ability = function() {
+	// code to perform ability action here
+	switch (global.current_ability) {
+		case ABILITY.WATER:
+		var _player_x = x;
+		var _player_y = y;
+		with(obj_enemy_parent) {
+			if (distance_to_object(obj_player) < 200 && movement_state == MOVEMENT_STATES_ENEMY.PURSUE) {
+				start_movement_patrol_from_pursue();
+			}
+		}
+		break;
+	}
+	
+	global.current_ability = ABILITY.NONE;
+	movement_state = MOVEMENT_STATES.FREE_MOVEMENT;
+}
+
 
 check_caught = function() {
 	
@@ -66,6 +88,30 @@ check_caught = function() {
 		
 		player_restart_failure();
 		
+		
 	}
 	
+}
+
+change_sprite = function() {
+	switch (global.current_ability) {
+		case ABILITY.NONE:
+			sprite_index = spr_player;
+			break;
+		case ABILITY.FIRE:
+			sprite_index = spr_fire_player;
+			break;
+		case ABILITY.WATER:
+			sprite_index = spr_water_player;
+			break;
+		case ABILITY.ELECTRICITY:
+			sprite_index = spr_electricity_player;
+			break;
+		case ABILITY.DARKNESS:
+			sprite_index = spr_darkness_player;
+			break;
+		case ABILITY.TELEPORTATION:
+			sprite_index = spr_teleportation_player;
+			break;
+	}
 }

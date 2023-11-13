@@ -1,0 +1,1 @@
+movement_state = MOVEMENT_STATES.USE_ABILITY;

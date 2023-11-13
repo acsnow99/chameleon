@@ -1,4 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
+enum ABILITY {
+	
+	NONE,
+	FIRE,
+	WATER,
+	ELECTRICITY,
+	DARKNESS,
+	TELEPORTATION,
+	LENGTH
+	
+}
