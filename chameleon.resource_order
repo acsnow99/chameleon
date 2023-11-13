@@ -33,6 +33,7 @@
     {"name":"obj_obstacle_parent","order":3,"path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},
     {"name":"obj_enemy_parent","order":4,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_ctrl_dtsteady","order":2,"path":"objects/obj_ctrl_dtsteady/obj_ctrl_dtsteady.yy",},
+    {"name":"obj_ctrl_camera","order":10,"path":"objects/obj_ctrl_camera/obj_ctrl_camera.yy",},
     {"name":"obj_ctrl_enemies","order":7,"path":"objects/obj_ctrl_enemies/obj_ctrl_enemies.yy",},
     {"name":"spr_fire_player","order":7,"path":"sprites/spr_fire_player/spr_fire_player.yy",},
   ],

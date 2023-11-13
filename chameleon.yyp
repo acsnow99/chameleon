@@ -53,6 +53,7 @@
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_ctrl_dtsteady","path":"objects/obj_ctrl_dtsteady/obj_ctrl_dtsteady.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_ctrl_camera","path":"objects/obj_ctrl_camera/obj_ctrl_camera.yy",},},
     {"id":{"name":"tileset_collision","path":"tilesets/tileset_collision/tileset_collision.yy",},},
     {"id":{"name":"obj_ctrl_enemies","path":"objects/obj_ctrl_enemies/obj_ctrl_enemies.yy",},},
     {"id":{"name":"spr_fire_player","path":"sprites/spr_fire_player/spr_fire_player.yy",},},
