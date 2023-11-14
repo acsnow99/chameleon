@@ -3,12 +3,8 @@ if (!global.levels_initiated) {
 	global.levels_initiated = levels_init();
 	exit;
 }
-global.level = level_seek(obj_player.x, obj_player.y);
 
 #macro view view_camera[0]
-
-camera_set_view_size(view, global.view_width, global.view_height);
-
 
 #region crash prevention
 if (!instance_exists(focus_obj) || !global.levels_initiated) {
@@ -17,16 +13,24 @@ if (!instance_exists(focus_obj) || !global.levels_initiated) {
 	
 }
 #endregion
-	
+global.level = level_seek(obj_player.x, obj_player.y);
 	
 var _focusx = focus_obj.x;
 var _focusy = focus_obj.y;
 	
-	
-var _min_x = global.levels[global.level, 0];
-var _max_x = global.levels[global.level, 1];
-var _min_y = global.levels[global.level, 2];
-var _max_y = global.levels[global.level, 3];
+
+if (global.level != -1) {
+	var _min_x = global.levels[global.level, 0];
+	var _max_x = global.levels[global.level, 1];
+	var _min_y = global.levels[global.level, 2];
+	var _max_y = global.levels[global.level, 3];
+}
+else {
+	var _min_x = 0;
+	var _max_x = room_width;
+	var _min_y = 0;
+	var _max_y = room_height;
+}
 	
 	
 var _camera_focusx = _focusx - global.view_width / 2;

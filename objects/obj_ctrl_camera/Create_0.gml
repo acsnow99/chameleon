@@ -21,7 +21,7 @@ depth = -1;
 _x = 0;
 _y = 0;
 
-cam_spd = 500;
+cam_spd = 0.9;
 focus_obj = obj_player;
 
 
@@ -44,34 +44,6 @@ levels_init = function() {
 	global.level_count = instance_number(obj_level_frame) - 1;
 
 	for (var i = 0; i <= global.level_count; i++) {
-		
-		/*
-		var o = i;
-		
-		#region sorting out where the level being looked at is
-		var p = 0;
-		
-		for (var e = 0; e > 1; e--) {
-		
-			if (o >= map_width) {
-			
-				o -= map_width;
-				p++;
-			
-			}
-			else {
-				
-				e = 3;
-				
-			}
-			
-		}
-		#endregion
-		
-		
-		var _x = o * level_width;
-		var _y = p * level_height;
-		*/
 	
 		var _this_frame = instance_find(obj_level_frame, i);
 	
@@ -101,7 +73,6 @@ level_seek = function(_focusx, _focusy) {
 		if (_focusx >= _min_x && _focusx <= _max_x && _focusy >= _min_y && _focusy <= _max_y) {
 			
 			return i;
-			exit;
 		
 		}
 		
