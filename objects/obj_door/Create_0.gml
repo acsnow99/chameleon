@@ -1,5 +1,4 @@
-is_open = true;
-initial_state = is_open;
+is_open = initial_open_state;
 
 original_x = x;
 original_y = y;
@@ -7,11 +6,13 @@ original_y = y;
 open = function() {
 	x = -1000;
 	y = -1000;
+	is_open = true;
 }
 
 close = function() {
 	x = original_x;
 	y = original_y;
+	is_open = false;
 }
 
 toggle = function() {
@@ -23,12 +24,10 @@ toggle = function() {
 			close();
 			break;
 	}
-	
-	is_open = !is_open;
 }
 
 reset = function() {
-	switch (initial_state) {
+	switch (initial_open_state) {
 		case false:
 			close();
 			break;
@@ -37,5 +36,9 @@ reset = function() {
 			break;
 	}
 	
-	is_open = initial_state;
+	is_open = initial_open_state;
+}
+
+if (is_open) {
+	open();
 }

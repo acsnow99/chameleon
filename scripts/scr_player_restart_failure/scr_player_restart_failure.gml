@@ -10,6 +10,14 @@ function player_restart_failure() {
 		reset();
 	}
 	
+	with(obj_lever) {
+		sprite_index = spr_lever_off;
+	}
+	
+	with(obj_wood) {
+		reset();
+	}
+	
 	if (!instance_exists(obj_player)) return;
 	
 	obj_ctrl_enemies.restart_enemies();

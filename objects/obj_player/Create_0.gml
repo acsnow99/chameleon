@@ -66,27 +66,26 @@ movement_free = function() {
 use_ability = function() {
 	// code to perform ability action here
 	switch (global.current_ability) {
-		case ABILITY.WATER:
-			var _player_x = x;
-			var _player_y = y;
+		case ABILITY.DARKNESS:
 			with(obj_enemy_parent) {
 				if (distance_to_object(obj_player) < 200 && movement_state == MOVEMENT_STATES_ENEMY.PURSUE) {
 					start_movement_patrol_from_pursue();
+					global.current_ability = ABILITY.NONE;
 				}
 			}
 			break;
 		case ABILITY.ELECTRICITY:
-			with(obj_door) {
-				show_debug_message(point_distance(original_x, original_y, obj_player.x, obj_player.y));
-				if (point_distance(original_x, original_y, obj_player.x, obj_player.y) < 200) {
-					show_debug_message("toggle");
+			with(obj_lever) {
+				if (distance_to_object(obj_player) < 80) {
 					toggle();
+					global.current_ability = ABILITY.NONE;
 				}
 			}
 			break;
+		default:
+			global.current_ability = ABILITY.NONE;
 	}
 	
-	global.current_ability = ABILITY.NONE;
 	movement_state = MOVEMENT_STATES.FREE_MOVEMENT;
 }
 
@@ -100,6 +99,16 @@ check_caught = function() {
 		
 	}
 	
+}
+
+check_for_burning = function() {
+	if (global.current_ability == ABILITY.FIRE) {
+		with(obj_wood) {
+			if (distance_to_object(obj_player) < 15 && state == STATE.INTACT) {
+				start_burning();
+			}
+		}
+	}
 }
 
 change_sprite = function() {
