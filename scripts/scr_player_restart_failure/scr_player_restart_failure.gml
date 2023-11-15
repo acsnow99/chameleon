@@ -2,6 +2,14 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_restart_failure() {
 	
+	//for (var i = 0; i < instance_number(obj_respawn_point_trigger); i++) {
+	//	var _o = instance_find(obj_respawn_point_trigger, i);
+	//	_o.is_current_respawn_point = false;
+	//}
+	with(obj_door) {
+		reset();
+	}
+	
 	if (!instance_exists(obj_player)) return;
 	
 	obj_ctrl_enemies.restart_enemies();
