@@ -96,7 +96,6 @@ check_caught = function() {
 		
 		player_restart_failure();
 		
-		
 	}
 	
 }
