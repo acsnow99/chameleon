@@ -50,7 +50,7 @@ movement_patrol = function() {
 		path_started = true;
 	}
 	
-	if (distance_to_object(obj_player) < detect_distance) {
+	if (can_see_player()) {
 		start_movement_pursue();	
 	}
 	
@@ -121,6 +121,11 @@ start_movement_pursue = function() {
 	movement_state = MOVEMENT_STATES_ENEMY.PURSUE;
 	path_end();
 	move_speed = move_speed_pursuit;
+}
+
+
+can_see_player = function() {
+	return distance_to_object(obj_player) < detect_distance && !collision_line(x, y, obj_player.x, obj_player.y, global.collision_layer, false, true);
 }
 
 
