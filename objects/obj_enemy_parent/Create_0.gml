@@ -12,6 +12,7 @@ movement_state = MOVEMENT_STATES_ENEMY.PATROL;
 patrol_path = pth_updown;
 path_speed_default = 5;
 path_speed = path_speed_default;
+path_speed_pre_stunned = path_speed_default;
 path_started = false;
 move_speed_pursuit = 400;
 // distance within which the enemy starts chasing the player
@@ -31,7 +32,7 @@ path_speed_set_post_stunned = true;
 movement_patrol = function() {
 	stunned_update();
 	if (stunned_by_electricity) {
-		if (path_speed > 0) {
+		if (path_speed_set_post_stunned) {
 			path_speed_pre_stunned = path_speed;
 			path_speed_set_post_stunned = false;
 		}
@@ -115,6 +116,9 @@ start_movement_patrol_from_pursue = function() {
 		patrol_start_target_y = _y_end;
 		path_position_to_start_patrol = 1;
 	}
+	
+	
+	move_speed = move_speed_pursuit;
 }
 
 start_movement_pursue = function() {
@@ -154,8 +158,15 @@ check_stunned = function() {
 	}
 }
 
+stop_stun = function() {
+	stunned_by_electricity = false;
+	alarmvar_stunned_by_electricity = 0;
+	path_speed = path_speed_pre_stunned;
+}
+
 
 restart = function() {
 	movement_state = MOVEMENT_STATES_ENEMY.PATROL;
 	path_started = false;
+	stop_stun();
 }
