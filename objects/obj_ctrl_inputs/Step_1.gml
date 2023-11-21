@@ -6,6 +6,8 @@ for (var i = 0; i < global.keyboard_input_count; i++) {
 	
 }
 
+
+
 for (var i = 0; i < ABILITY.LENGTH; i++) {
 	if (keyboard_check(ord(string(i)))) {
 		switch i {
@@ -28,5 +30,8 @@ for (var i = 0; i < ABILITY.LENGTH; i++) {
 				global.current_ability = ABILITY.TELEPORTATION;
 				break;
 		}
+		alarmvar_end_ability = alarmvar_end_abilitiy_defaults[global.current_ability];
 	}
 }
+
+ability_update();

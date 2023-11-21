@@ -81,6 +81,12 @@ use_ability = function() {
 					global.current_ability = ABILITY.NONE;
 				}
 			}
+			with (obj_environment_water) {
+				if (distance_to_object(obj_player) < 80) {
+					make_dangerous_to_enemies();
+					global.current_ability = ABILITY.NONE;
+				}
+			}
 			break;
 		default:
 			global.current_ability = ABILITY.NONE;
@@ -95,7 +101,6 @@ check_caught = function() {
 	if (place_meeting(x, y, obj_enemy_parent)) {
 		
 		player_restart_failure();
-		
 		
 	}
 	
