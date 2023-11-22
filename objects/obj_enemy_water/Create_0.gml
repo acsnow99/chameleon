@@ -1,2 +1,3 @@
 event_inherited();
-move_speed *= 0.5;
+path_speed *= 0.4;
+base_pursue_speed *= 0.2;

@@ -1,2 +1,2 @@
 event_inherited();
-move_speed_pursuit *= 0.5;
+base_pursue_speed *= 0.5;

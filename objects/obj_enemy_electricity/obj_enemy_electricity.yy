@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_enemy_electricity",
+    "path": "sprites/spr_enemy_electricity/spr_enemy_electricity.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
