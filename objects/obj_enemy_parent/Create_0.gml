@@ -9,9 +9,8 @@ enum MOVEMENT_STATES_ENEMY {
 }
 
 movement_state = MOVEMENT_STATES_ENEMY.PATROL;
-path_speed_default = 2.5;
-path_speed = path_speed_default;
-path_speed_pre_stunned = path_speed_default;
+path_speed = 2.5;
+path_speed_pre_stunned = path_speed;
 path_started = false;
 move_speed_pursuit = 400;
 // distance within which the enemy starts chasing the player
