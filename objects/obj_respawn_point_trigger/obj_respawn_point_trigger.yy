@@ -33,5 +33,5 @@
     "path": "sprites/spr_respawn_trigger/spr_respawn_trigger.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
