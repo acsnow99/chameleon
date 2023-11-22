@@ -1,7 +1,7 @@
 {
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
-  "name": "Path4",
+  "name": "Path8",
   "closed": false,
   "kind": 0,
   "parent": {
@@ -9,9 +9,8 @@
     "path": "folders/Paths.yy",
   },
   "points": [
-    {"speed":100.0,"x":1312.0,"y":320.0,},
-    {"speed":100.0,"x":1312.0,"y":320.0,},
-    {"speed":100.0,"x":1312.0,"y":320.0,},
+    {"speed":100.0,"x":1088.0,"y":2400.0,},
+    {"speed":100.0,"x":1520.0,"y":2400.0,},
   ],
   "precision": 4,
 }

@@ -15,7 +15,7 @@ path_speed_pre_stunned = path_speed_default;
 path_started = false;
 move_speed_pursuit = 400;
 // distance within which the enemy starts chasing the player
-detect_distance = 200;
+detect_distance = 100;
 stop_pursuit_distance = 400;
 start_path_from_pursue_distance = 10;
 
@@ -83,7 +83,13 @@ movement_pursue = function() {
 	}
 	
 	var _spd = global.dt_steady * move_speed;
-	var _dir = point_direction(x, y, obj_player.x, obj_player.y);
+	var _dir = 0;
+	if (global.current_ability == ABILITY.FIRE) {
+		_dir = point_direction(obj_player.x, obj_player.y, x, y);
+	}
+	else {
+		_dir = point_direction(x, y, obj_player.x, obj_player.y);
+	}
 	
 	move(_spd, _dir);
 }
@@ -169,4 +175,6 @@ restart = function() {
 	movement_state = MOVEMENT_STATES_ENEMY.PATROL;
 	path_started = false;
 	stop_stun();
+	x = path_get_point_x(patrol_path, 0);
+	y = path_get_point_y(patrol_path, 0);
 }
