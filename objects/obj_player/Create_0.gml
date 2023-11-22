@@ -24,7 +24,7 @@ global.current_ability = ABILITY.NONE;
 
 
 get_move_speed = function() { 
-	return global.current_ability == ABILITY.ELECTRICITY ? 750 : 600;
+	return global.current_ability == ABILITY.ELECTRICITY ? 400 : 300;
 }
 
 movement_free = function() {

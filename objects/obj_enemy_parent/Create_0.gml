@@ -9,8 +9,7 @@ enum MOVEMENT_STATES_ENEMY {
 }
 
 movement_state = MOVEMENT_STATES_ENEMY.PATROL;
-patrol_path = pth_updown;
-path_speed_default = 5;
+path_speed_default = 2.5;
 path_speed = path_speed_default;
 path_speed_pre_stunned = path_speed_default;
 path_started = false;
@@ -24,7 +23,8 @@ patrol_start_target_x = 0;
 patrol_start_target_y = 0;
 
 stunned_by_electricity = false;
-alarmvar_stunned_by_electricity_default = 2;
+// how long the enemy is stunned by electricity
+alarmvar_stunned_by_electricity_default = 4;
 alarmvar_stunned_by_electricity = 0;
 path_speed_set_post_stunned = true;
 
