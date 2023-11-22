@@ -24,7 +24,11 @@ global.current_ability = ABILITY.NONE;
 
 
 get_move_speed = function() { 
-	return global.current_ability == ABILITY.ELECTRICITY ? 400 : 300;
+	if (place_meeting(x, y, obj_environment_water)) {
+		return global.current_ability == ABILITY.WATER ? 500 : 150;
+	} else {
+		return 350;
+	}
 }
 
 movement_free = function() {
