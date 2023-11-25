@@ -9,11 +9,10 @@ enum MOVEMENT_STATES_ENEMY {
 }
 
 movement_state = MOVEMENT_STATES_ENEMY.PATROL;
-path_speed_default = 2.5;
-path_speed = path_speed_default;
-path_speed_pre_stunned = path_speed_default;
 path_started = false;
-move_speed_pursuit = 400;
+
+base_path_speed = 2.5;
+base_pursue_speed = 400;
 // distance within which the enemy starts chasing the player
 detect_distance = 100;
 stop_pursuit_distance = 400;
@@ -23,38 +22,47 @@ patrol_start_target_x = 0;
 patrol_start_target_y = 0;
 
 stunned_by_electricity = false;
+
+get_speed_multiplier = function() {
+	if (stunned_by_electricity) {
+		return 0;
+	} else if (place_meeting(x, y, obj_environment_water)) {
+		return object_index == obj_enemy_water ? 1.4 : 0.5;
+	} else {
+		return 1;
+	}
+}
+
+get_path_speed = function() {
+	return base_path_speed * get_speed_multiplier();
+}
+
+get_pursue_speed = function() {
+	return base_pursue_speed * get_speed_multiplier();
+}
+
+path_speed_pre_stunned = get_path_speed();
 // how long the enemy is stunned by electricity
 alarmvar_stunned_by_electricity_default = 4;
 alarmvar_stunned_by_electricity = 0;
-path_speed_set_post_stunned = true;
-
 
 movement_patrol = function() {
 	stunned_update();
 	if (stunned_by_electricity) {
-		if (path_speed_set_post_stunned) {
-			path_speed_pre_stunned = path_speed;
-			path_speed_set_post_stunned = false;
-		}
 		path_speed = 0;
 		return;
 	}
-	else {
-		if (!path_speed_set_post_stunned) {
-			path_speed = path_speed_pre_stunned;
-			path_speed_set_post_stunned = true;
-		}
-	}
+	
+	path_speed = (path_speed > 0 ? 1 : -1) * get_path_speed();
 	
 	if (!path_started) {
-		path_start(patrol_path, path_speed, path_action_reverse, true);
+		path_start(patrol_path, get_path_speed(), path_action_reverse, true);
 		path_started = true;
 	}
 	
 	if (can_see_player()) {
 		start_movement_pursue();	
 	}
-	
 }
 
 movement_patrol_from_pursue = function() {
@@ -67,7 +75,7 @@ movement_patrol_from_pursue = function() {
 		start_movement_patrol();
 	}
 	
-	var _spd = global.dt_steady * move_speed;
+	var _spd = global.dt_steady * get_pursue_speed();
 	var _dir = point_direction(x, y, patrol_start_target_x, patrol_start_target_y);
 	move(_spd, _dir);
 }
@@ -82,7 +90,7 @@ movement_pursue = function() {
 		start_movement_patrol_from_pursue();
 	}
 	
-	var _spd = global.dt_steady * move_speed;
+	var _spd = global.dt_steady * get_pursue_speed();
 	var _dir = 0;
 	if (global.current_ability == ABILITY.FIRE) {
 		_dir = point_direction(obj_player.x, obj_player.y, x, y);
@@ -97,7 +105,7 @@ movement_pursue = function() {
 
 start_movement_patrol = function() {
 	movement_state = MOVEMENT_STATES_ENEMY.PATROL;
-	path_start(patrol_path, path_speed, path_action_reverse, true);
+	path_start(patrol_path, get_path_speed(), path_action_reverse, true);
 	path_position = path_position_to_start_patrol;
 }
 
@@ -122,15 +130,11 @@ start_movement_patrol_from_pursue = function() {
 		patrol_start_target_y = _y_end;
 		path_position_to_start_patrol = 1;
 	}
-	
-	
-	move_speed = move_speed_pursuit;
 }
 
 start_movement_pursue = function() {
 	movement_state = MOVEMENT_STATES_ENEMY.PURSUE;
 	path_end();
-	move_speed = move_speed_pursuit;
 }
 
 
@@ -167,7 +171,6 @@ check_stunned = function() {
 stop_stun = function() {
 	stunned_by_electricity = false;
 	alarmvar_stunned_by_electricity = 0;
-	path_speed = path_speed_pre_stunned;
 }
 
 
