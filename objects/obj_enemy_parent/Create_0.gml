@@ -37,7 +37,7 @@ get_path_speed = function() {
 	return base_path_speed * get_speed_multiplier();
 }
 
-get_move_speed_pursue = function() {
+get_pursue_speed = function() {
 	return base_pursue_speed * get_speed_multiplier();
 }
 
@@ -75,7 +75,7 @@ movement_patrol_from_pursue = function() {
 		start_movement_patrol();
 	}
 	
-	var _spd = global.dt_steady * get_move_speed_pursue();
+	var _spd = global.dt_steady * get_pursue_speed();
 	var _dir = point_direction(x, y, patrol_start_target_x, patrol_start_target_y);
 	move(_spd, _dir);
 }
@@ -90,7 +90,7 @@ movement_pursue = function() {
 		start_movement_patrol_from_pursue();
 	}
 	
-	var _spd = global.dt_steady * get_move_speed_pursue();
+	var _spd = global.dt_steady * get_pursue_speed();
 	var _dir = 0;
 	if (global.current_ability == ABILITY.FIRE) {
 		_dir = point_direction(obj_player.x, obj_player.y, x, y);
