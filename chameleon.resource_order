@@ -64,6 +64,7 @@
     {"name":"Path13","order":12,"path":"paths/Path13/Path13.yy",},
     {"name":"obj_ctrl_inputs","order":1,"path":"objects/obj_ctrl_inputs/obj_ctrl_inputs.yy",},
     {"name":"obj_obstacle_parent","order":3,"path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},
+    {"name":"spr_hud_textbox","order":23,"path":"sprites/spr_hud_textbox/spr_hud_textbox.yy",},
     {"name":"spr_door_closed","order":8,"path":"sprites/spr_door_closed/spr_door_closed.yy",},
     {"name":"obj_enemy_parent","order":4,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_ctrl_dtsteady","order":2,"path":"objects/obj_ctrl_dtsteady/obj_ctrl_dtsteady.yy",},

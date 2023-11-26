@@ -33,3 +33,16 @@ if (_i > 0) {
 	}
 }
 #endregion
+
+#region text
+if (global.text_active) {
+	draw_sprite(spr_hud_textbox, 0, 0, 0);
+	if (text_wrapped == "") {
+		text_wrapped = wrap_text(text_by_level[room_index], text_max_width);
+	}
+	draw_text(76, 410, text_wrapped);
+}
+else {
+	text_wrapped = "";
+}
+#endregion
