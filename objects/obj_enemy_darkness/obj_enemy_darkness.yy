@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_water",
-  "eventList": [],
+  "name": "obj_enemy_darkness",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy_water",
-    "path": "sprites/spr_enemy_water/spr_enemy_water.yy",
+    "name": "spr_enemy_darkness",
+    "path": "sprites/spr_enemy_darkness/spr_enemy_darkness.yy",
   },
   "spriteMaskId": null,
   "visible": true,
