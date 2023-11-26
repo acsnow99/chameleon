@@ -10,11 +10,10 @@ enum MOVEMENT_STATES_ENEMY {
 
 movement_state = MOVEMENT_STATES_ENEMY.PATROL;
 path_started = false;
-
 base_path_speed = 2.5;
 base_pursue_speed = 400;
 // distance within which the enemy starts chasing the player
-detect_distance = 100;
+detect_distance = 150;
 stop_pursuit_distance = 400;
 start_path_from_pursue_distance = 10;
 
@@ -139,7 +138,7 @@ start_movement_pursue = function() {
 
 
 can_see_player = function() {
-	return distance_to_object(obj_player) < detect_distance && !collision_line(x, y, obj_player.x, obj_player.y, global.collision_layer, false, true);
+	return point_distance(obj_player.x, obj_player.y, x, y) < detect_distance && !collision_line(x, y, obj_player.x, obj_player.y, global.collision_layer, false, true);
 }
 
 

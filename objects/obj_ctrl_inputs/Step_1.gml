@@ -11,22 +11,22 @@ for (var i = 0; i < global.keyboard_input_count; i++) {
 for (var i = 0; i < ABILITY.LENGTH; i++) {
 	if (keyboard_check(ord(string(i)))) {
 		switch i {
-			case 0:
+			case ABILITY.NONE:
 				global.current_ability = ABILITY.NONE;
 				break;
-			case 1:
+			case ABILITY.FIRE:
 				global.current_ability = ABILITY.FIRE;
 				break;
-			case 2:
+			case ABILITY.WATER:
 				global.current_ability = ABILITY.WATER;
 				break;
-			case 3:
+			case ABILITY.ELECTRICITY:
 				global.current_ability = ABILITY.ELECTRICITY;
 				break;
-			case 4:
+			case ABILITY.DARKNESS:
 				global.current_ability = ABILITY.DARKNESS;
 				break;
-			case 5:
+			case ABILITY.TELEPORTATION:
 				global.current_ability = ABILITY.TELEPORTATION;
 				break;
 		}
