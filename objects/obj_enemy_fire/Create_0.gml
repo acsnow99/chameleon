@@ -1,2 +1,2 @@
 event_inherited();
-detect_distance *= 1.3;
+detect_distance *= 1.35;

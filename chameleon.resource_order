@@ -45,6 +45,7 @@
     {"name":"obj_door","order":10,"path":"objects/obj_door/obj_door.yy",},
     {"name":"Path2","order":5,"path":"paths/Path2/Path2.yy",},
     {"name":"obj_ctrl_progress","order":22,"path":"objects/obj_ctrl_progress/obj_ctrl_progress.yy",},
+    {"name":"obj_enemy_darkness","order":24,"path":"objects/obj_enemy_darkness/obj_enemy_darkness.yy",},
     {"name":"obj_ctrl_hud","order":21,"path":"objects/obj_ctrl_hud/obj_ctrl_hud.yy",},
     {"name":"spr_hud_colors","order":17,"path":"sprites/spr_hud_colors/spr_hud_colors.yy",},
     {"name":"obj_lever","order":12,"path":"objects/obj_lever/obj_lever.yy",},

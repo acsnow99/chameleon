@@ -63,6 +63,7 @@
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"Path2","path":"paths/Path2/Path2.yy",},},
     {"id":{"name":"obj_ctrl_progress","path":"objects/obj_ctrl_progress/obj_ctrl_progress.yy",},},
+    {"id":{"name":"obj_enemy_darkness","path":"objects/obj_enemy_darkness/obj_enemy_darkness.yy",},},
     {"id":{"name":"obj_ctrl_hud","path":"objects/obj_ctrl_hud/obj_ctrl_hud.yy",},},
     {"id":{"name":"spr_hud_colors","path":"sprites/spr_hud_colors/spr_hud_colors.yy",},},
     {"id":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},},
