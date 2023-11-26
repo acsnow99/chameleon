@@ -13,6 +13,10 @@ enum DATA {
 	LENGTH
 }
 
+room_data[ROOMS.ELECTRICITY, DATA.START_X] = 144;
+room_data[ROOMS.ELECTRICITY, DATA.START_Y] = 96;
+room_data[ROOMS.ELECTRICITY, DATA.ROOM] = Room_electricity;
+
 room_data[ROOMS.FIRE, DATA.START_X] = 160;
 room_data[ROOMS.FIRE, DATA.START_Y] = 96;
 room_data[ROOMS.FIRE, DATA.ROOM] = Room_fire;
