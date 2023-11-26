@@ -1,0 +1,2 @@
+
+alarmvar_stop_display_text = alarmvar_stop_display_text_default;

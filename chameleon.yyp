@@ -67,6 +67,7 @@
     {"id":{"name":"spr_hud_colors","path":"sprites/spr_hud_colors/spr_hud_colors.yy",},},
     {"id":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},},
     {"id":{"name":"pth_updown","path":"paths/pth_updown/pth_updown.yy",},},
+    {"id":{"name":"obj_start_level_trigger","path":"objects/obj_start_level_trigger/obj_start_level_trigger.yy",},},
     {"id":{"name":"Path3","path":"paths/Path3/Path3.yy",},},
     {"id":{"name":"spr_tileset_collision","path":"sprites/spr_tileset_collision/spr_tileset_collision.yy",},},
     {"id":{"name":"obj_ctrl_tiles","path":"objects/obj_ctrl_tiles/obj_ctrl_tiles.yy",},},

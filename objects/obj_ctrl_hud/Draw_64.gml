@@ -36,6 +36,12 @@ if (_i > 0) {
 
 #region text
 if (global.text_active) {
+	if (global.button_pressed_this_room) {
+		alarmvar_stop_display_text -= global.dt_steady;
+		if (alarmvar_stop_display_text <= 0) {
+			global.text_active = false;
+		}
+	}
 	draw_sprite(spr_hud_textbox, 0, 0, 0);
 	if (text_wrapped == "") {
 		text_wrapped = wrap_text(text_by_level[room_index], text_max_width);
