@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"spr_teleportation_player","path":"sprites/spr_teleportation_player/spr_teleportation_player.yy",},},
+    {"id":{"name":"obj_finish_game_trigger","path":"objects/obj_finish_game_trigger/obj_finish_game_trigger.yy",},},
     {"id":{"name":"Path11","path":"paths/Path11/Path11.yy",},},
     {"id":{"name":"spr_darkness_player","path":"sprites/spr_darkness_player/spr_darkness_player.yy",},},
     {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},},
@@ -96,6 +97,7 @@
     {"id":{"name":"Room_next","path":"rooms/Room_next/Room_next.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Path12","path":"paths/Path12/Path12.yy",},},
+    {"id":{"name":"Room_congrats","path":"rooms/Room_congrats/Room_congrats.yy",},},
     {"id":{"name":"Path6","path":"paths/Path6/Path6.yy",},},
     {"id":{"name":"obj_enemy_electricity","path":"objects/obj_enemy_electricity/obj_enemy_electricity.yy",},},
     {"id":{"name":"Room_test","path":"rooms/Room_test/Room_test.yy",},},
@@ -116,6 +118,7 @@
     {"roomId":{"name":"Room_fire","path":"rooms/Room_fire/Room_fire.yy",},},
     {"roomId":{"name":"Room_next","path":"rooms/Room_next/Room_next.yy",},},
     {"roomId":{"name":"Room_test","path":"rooms/Room_test/Room_test.yy",},},
+    {"roomId":{"name":"Room_congrats","path":"rooms/Room_congrats/Room_congrats.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_teleportation_player","order":7,"path":"sprites/spr_teleportation_player/spr_teleportation_player.yy",},
+    {"name":"obj_finish_game_trigger","order":26,"path":"objects/obj_finish_game_trigger/obj_finish_game_trigger.yy",},
     {"name":"Path11","order":10,"path":"paths/Path11/Path11.yy",},
     {"name":"spr_darkness_player","order":6,"path":"sprites/spr_darkness_player/spr_darkness_player.yy",},
     {"name":"spr_wood","order":11,"path":"sprites/spr_wood/spr_wood.yy",},
@@ -74,6 +75,7 @@
     {"name":"Path4","order":7,"path":"paths/Path4/Path4.yy",},
     {"name":"Room_next","order":1,"path":"rooms/Room_next/Room_next.yy",},
     {"name":"Path12","order":11,"path":"paths/Path12/Path12.yy",},
+    {"name":"Room_congrats","order":5,"path":"rooms/Room_congrats/Room_congrats.yy",},
     {"name":"Path6","order":1,"path":"paths/Path6/Path6.yy",},
     {"name":"obj_enemy_electricity","order":22,"path":"objects/obj_enemy_electricity/obj_enemy_electricity.yy",},
     {"name":"Room_test","order":2,"path":"rooms/Room_test/Room_test.yy",},
