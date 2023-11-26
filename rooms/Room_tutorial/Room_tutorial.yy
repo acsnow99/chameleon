@@ -7,12 +7,6 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_71C08AFB_3","path":"rooms/Room_tutorial/Room_tutorial.yy",},
-    {"name":"inst_7AC73E10_3","path":"rooms/Room_tutorial/Room_tutorial.yy",},
-    {"name":"inst_6BEB8C81_3","path":"rooms/Room_tutorial/Room_tutorial.yy",},
-    {"name":"inst_461CB987_3","path":"rooms/Room_tutorial/Room_tutorial.yy",},
-    {"name":"inst_C61ABF4_3","path":"rooms/Room_tutorial/Room_tutorial.yy",},
-    {"name":"inst_3F634FFC_3","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_376138BF_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_15AB5D27_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_3E76FC62_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
@@ -20,7 +14,6 @@
     {"name":"inst_2500DB4D_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_38C6A215_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_435E9DFB_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
-    {"name":"inst_197CD862_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_67AE2387_2","path":"rooms/Room_tutorial/Room_tutorial.yy",},
     {"name":"inst_5149D449","path":"rooms/Room_tutorial/Room_tutorial.yy",},
   ],
@@ -34,14 +27,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Level_bounds","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5149D449","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_level_frame","path":"objects/obj_level_frame/obj_level_frame.yy",},"properties":[],"rotation":0.0,"scaleX":0.5555555,"scaleY":1.1333333,"x":0.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Ctrl","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71C08AFB_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_inputs","path":"objects/obj_ctrl_inputs/obj_ctrl_inputs.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AC73E10_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_dtsteady","path":"objects/obj_ctrl_dtsteady/obj_ctrl_dtsteady.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6BEB8C81_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_respawn","path":"objects/obj_ctrl_respawn/obj_ctrl_respawn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_461CB987_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_enemies","path":"objects/obj_ctrl_enemies/obj_ctrl_enemies.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":-32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C61ABF4_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_camera","path":"objects/obj_ctrl_camera/obj_ctrl_camera.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":-32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F634FFC_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_tiles","path":"objects/obj_ctrl_tiles/obj_ctrl_tiles.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":-32.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Ctrl","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_376138BF_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67AE2387_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[
@@ -72,7 +58,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_435E9DFB_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"propertyId":{"name":"room_index","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"value":"ROOMS.FIRE",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1040.0,"y":1456.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_197CD862_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ctrl_change_room","path":"objects/obj_ctrl_change_room/obj_ctrl_change_room.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":-32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
