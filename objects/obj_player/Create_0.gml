@@ -22,13 +22,16 @@ movement_state = MOVEMENT_STATES.FREE_MOVEMENT;
 sprite_index = spr_player;
 global.current_ability = ABILITY.NONE;
 
+base_move_speed = 350;
 
 get_move_speed = function() { 
+	multiplier = 1;
+	
 	if (place_meeting(x, y, obj_environment_water)) {
-		return global.current_ability == ABILITY.WATER ? 500 : 150;
-	} else {
-		return 350;
+		multiplier = global.current_ability == ABILITY.WATER ? 1.35 : 0.5;
 	}
+	
+	return base_move_speed * multiplier;
 }
 
 movement_free = function() {
@@ -80,13 +83,13 @@ use_ability = function() {
 			break;
 		case ABILITY.ELECTRICITY:
 			with(obj_lever) {
-				if (distance_to_object(obj_player) < 80) {
+				if (distance_to_object(obj_player) < 40) {
 					toggle();
 					global.current_ability = ABILITY.NONE;
 				}
 			}
 			with (obj_environment_water) {
-				if (distance_to_object(obj_player) < 80) {
+				if (place_meeting(x, y, obj_player)) {
 					make_dangerous_to_enemies();
 					global.current_ability = ABILITY.NONE;
 				}

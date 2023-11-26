@@ -11,7 +11,7 @@ enum MOVEMENT_STATES_ENEMY {
 movement_state = MOVEMENT_STATES_ENEMY.PATROL;
 path_started = false;
 base_path_speed = 2.5;
-base_pursue_speed = 230;
+base_pursue_speed = 265;
 // distance within which the enemy starts chasing the player
 detect_distance = 150;
 stop_pursuit_distance = 400;
@@ -26,7 +26,7 @@ get_speed_multiplier = function() {
 	if (stunned_by_electricity) {
 		return 0;
 	} else if (place_meeting(x, y, obj_environment_water)) {
-		return object_index == obj_enemy_water ? 1.4 : 0.5;
+		return object_index == obj_enemy_water ? 1.4 : 0.55;
 	} else {
 		return 1;
 	}
