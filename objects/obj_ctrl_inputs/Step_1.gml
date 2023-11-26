@@ -10,6 +10,9 @@ for (var i = 0; i < global.keyboard_input_count; i++) {
 
 for (var i = 0; i < ABILITY.LENGTH; i++) {
 	if (keyboard_check(ord(string(i)))) {
+		if (!global.abilities_obtained[i] || alarmvar_cooldown_ability[i] > 0) {
+			return;
+		}
 		switch i {
 			case ABILITY.NONE:
 				global.current_ability = ABILITY.NONE;
@@ -30,7 +33,8 @@ for (var i = 0; i < ABILITY.LENGTH; i++) {
 				global.current_ability = ABILITY.TELEPORTATION;
 				break;
 		}
-		alarmvar_end_ability = alarmvar_end_abilitiy_defaults[global.current_ability];
+		alarmvar_end_ability = alarmvar_end_ability_defaults[global.current_ability];
+		alarmvar_cooldown_ability[global.current_ability] = alarmvar_cooldown_ability_defaults[global.current_ability];
 	}
 }
 
