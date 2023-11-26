@@ -9,12 +9,27 @@ global.mve_inputs_keyboard[6] = vk_left;
 global.mve_inputs_keyboard[7] = vk_down;
 global.keyboard_input_count = 8;
 
-alarmvar_end_abilitiy_defaults[ABILITY.FIRE] = 5;
-alarmvar_end_abilitiy_defaults[ABILITY.ELECTRICITY] = 5000;
-alarmvar_end_abilitiy_defaults[ABILITY.WATER] = 5000;
-alarmvar_end_abilitiy_defaults[ABILITY.DARKNESS] = 5000;
-alarmvar_end_abilitiy_defaults[ABILITY.TELEPORTATION] = 5000;
+alarmvar_end_ability_defaults[ABILITY.NONE] = 50000;
+alarmvar_end_ability_defaults[ABILITY.FIRE] = 5;
+alarmvar_end_ability_defaults[ABILITY.ELECTRICITY] = 5000;
+alarmvar_end_ability_defaults[ABILITY.WATER] = 5000;
+alarmvar_end_ability_defaults[ABILITY.DARKNESS] = 5000;
+alarmvar_end_ability_defaults[ABILITY.TELEPORTATION] = 5000;
 alarmvar_end_ability = 0;
+
+alarmvar_cooldown_ability_defaults[ABILITY.NONE] = 0;
+alarmvar_cooldown_ability_defaults[ABILITY.FIRE] = 3;
+alarmvar_cooldown_ability_defaults[ABILITY.ELECTRICITY] = 2;
+alarmvar_cooldown_ability_defaults[ABILITY.WATER] = 5;
+alarmvar_cooldown_ability_defaults[ABILITY.DARKNESS] = 10;
+alarmvar_cooldown_ability_defaults[ABILITY.TELEPORTATION] = 5;
+alarmvar_cooldown_ability[ABILITY.NONE] = 0;
+alarmvar_cooldown_ability[ABILITY.FIRE] = 0;
+alarmvar_cooldown_ability[ABILITY.ELECTRICITY] = 0;
+alarmvar_cooldown_ability[ABILITY.WATER] = 0;
+alarmvar_cooldown_ability[ABILITY.DARKNESS] = 0;
+alarmvar_cooldown_ability[ABILITY.TELEPORTATION] = 0;
+
 
 reset_input_booleans_to_false = function() {
 	
@@ -26,6 +41,7 @@ reset_input_booleans_to_false = function() {
 ability_update = function() {
 	ability_update_based_on_time();
 	ability_update_based_on_environment();
+	ability_update_cooldowns();
 }
 
 
@@ -50,6 +66,14 @@ ability_update_based_on_environment = function() {
 			break;
 		default:
 			return;
+	}
+}
+
+ability_update_cooldowns = function() {
+	for (var i = 0; i < ABILITY.LENGTH; i++) {
+		if (i != global.current_ability && alarmvar_cooldown_ability[i] > 0) {
+			alarmvar_cooldown_ability[i] -= global.dt_steady;
+		}
 	}
 }
 
