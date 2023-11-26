@@ -10,7 +10,7 @@ for (var i = 0; i < global.keyboard_input_count; i++) {
 
 for (var i = 0; i < ABILITY.LENGTH; i++) {
 	if (keyboard_check(ord(string(i)))) {
-		if (alarmvar_cooldown_ability[i] > 0) {
+		if (!global.abilities_obtained[i] || alarmvar_cooldown_ability[i] > 0) {
 			return;
 		}
 		switch i {

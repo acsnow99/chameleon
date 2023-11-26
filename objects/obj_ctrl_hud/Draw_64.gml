@@ -15,7 +15,7 @@ if (global.current_ability != ABILITY.NONE) {
 				// (numbers of frames per cooldown thing times which ability we're displaying minus 1) plus all the frames for each previous section of frames plus how far along we're through the animation
 				var _frames_offset = COOLDOWN_SPRITE_FRAME_COUNT * (_i - 1);
 				var _ability_time_left = _frames_offset + COOLDOWN_SPRITE_FRAME_COUNT * (ABILITY.FIRE - 1) + round((COOLDOWN_SPRITE_FRAME_COUNT - 1) * (1 - (obj_ctrl_inputs.alarmvar_end_ability/obj_ctrl_inputs.alarmvar_end_ability_defaults[ABILITY.FIRE])));
-				draw_sprite_ext(spr_hud_cooldowns, _ability_time_left, 0, 0, 1, 1, 0, c_white, 0.4);
+				draw_sprite_ext(spr_hud_cooldowns, _ability_time_left, 0, 0, 1, 1, 0, c_white, 0.8);
 			}
 			break;
 	}
@@ -28,7 +28,7 @@ if (_i > 0) {
 		if (global.current_ability != i && obj_ctrl_inputs.alarmvar_cooldown_ability[i] > 0) {
 			var _frames_offset = COOLDOWN_SPRITE_FRAME_COUNT * (_i - 1);
 			var _ability_cooldown_left = _frames_offset + COOLDOWN_SPRITE_FRAME_COUNT * (i - 1) + round((COOLDOWN_SPRITE_FRAME_COUNT - 2) * (obj_ctrl_inputs.alarmvar_cooldown_ability[i]/obj_ctrl_inputs.alarmvar_cooldown_ability_defaults[i]));
-			draw_sprite_ext(spr_hud_cooldowns, _ability_cooldown_left, 0, 0, 1, 1, 0, c_white, 0.4);
+			draw_sprite_ext(spr_hud_cooldowns, _ability_cooldown_left, 0, 0, 1, 1, 0, c_white, 0.8);
 		}
 	}
 }
