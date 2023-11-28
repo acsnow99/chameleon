@@ -57,6 +57,7 @@ level_seek = function(_focusx, _focusy) {
 	
 	for (var i = 0; i < instance_number(obj_level_frame); i++) {
 		
+		// TODO: the code is failing right here. It's saying index 1 is out of range for a length 1 array.
 		var _min_x = global.levels[i, 0];
 		var _max_x = global.levels[i, 1];
 		
