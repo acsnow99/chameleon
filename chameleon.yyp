@@ -93,6 +93,7 @@
     {"id":{"name":"obj_ctrl_dtsteady","path":"objects/obj_ctrl_dtsteady/obj_ctrl_dtsteady.yy",},},
     {"id":{"name":"spr_enemy_fire","path":"sprites/spr_enemy_fire/spr_enemy_fire.yy",},},
     {"id":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},},
+    {"id":{"name":"scr_end_game","path":"scripts/scr_end_game/scr_end_game.yy",},},
     {"id":{"name":"Path4","path":"paths/Path4/Path4.yy",},},
     {"id":{"name":"Room_next","path":"rooms/Room_next/Room_next.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

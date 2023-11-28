@@ -8,11 +8,15 @@ text_by_level[ROOMS.TUTORIAL] = "Welcome to _________. You are a chameleon that 
 text_by_level[ROOMS.ELECTRICITY] = "Your chameleon has learned how to change its scales to the color CYAN. Press 1 to turn CYAN and then press SPACE to apply an electric shock. Electricity can turn on yellow switches and stun enemies that are in water.";
 text_by_level[ROOMS.FIRE] = "Your chameleon has learned how to change its scales to the color RED. Press 2 to turn RED and light yourself on fire! While you're on fire, enemies run away from you and touching wooden walls will burn them away, opening new paths.";
 text_by_level[ROOMS.FIRE_ELECTRICITY] = "Now, for a challenge... Use the powers of CYAN and RED to get through this maze. Good luck.";
-text_by_level[ROOMS.CONGRATULATIONS] = "YOU DID IT! Your chameleon escaped to the outside world with your help. No more stressful escapes for him. Play New Game+?";
+text_by_level[ROOMS.CONGRATULATIONS] = "YOU DID IT! Your chameleon escaped to the outside world with your help. No more stressful escapes for him.";
 
 alarmvar_stop_display_text_default = 7;
 
 draw_set_font(fnt_basic);
+
+
+alarmvar_end_game_default = 5;
+alarmvar_end_game = 0;
 
 
 wrap_text = function(_text, _maxwidth) {
@@ -48,4 +52,8 @@ wrap_text = function(_text, _maxwidth) {
 start_drawing_text = function(_room_index) {
 	room_index = _room_index;
 	global.text_active = true;
+	
+	if (room_index == ROOMS.CONGRATULATIONS) {
+		alarmvar_end_game = alarmvar_end_game_default;
+	}
 }

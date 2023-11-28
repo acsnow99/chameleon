@@ -52,3 +52,14 @@ else {
 	text_wrapped = "";
 }
 #endregion
+
+
+if (alarmvar_end_game > 0) {
+	draw_set_alpha((alarmvar_end_game_default - alarmvar_end_game)/alarmvar_end_game_default);
+	draw_rectangle(0, 0, global.view_width, global.view_height, false);
+	draw_set_alpha(1);
+	alarmvar_end_game -= global.dt_steady;
+	if (alarmvar_end_game <= 0) {
+		scr_end_game();
+	}
+}

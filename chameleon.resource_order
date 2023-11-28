@@ -72,6 +72,7 @@
     {"name":"obj_ctrl_dtsteady","order":2,"path":"objects/obj_ctrl_dtsteady/obj_ctrl_dtsteady.yy",},
     {"name":"spr_enemy_fire","order":18,"path":"sprites/spr_enemy_fire/spr_enemy_fire.yy",},
     {"name":"obj_wood","order":11,"path":"objects/obj_wood/obj_wood.yy",},
+    {"name":"scr_end_game","order":2,"path":"scripts/scr_end_game/scr_end_game.yy",},
     {"name":"Path4","order":7,"path":"paths/Path4/Path4.yy",},
     {"name":"Room_next","order":1,"path":"rooms/Room_next/Room_next.yy",},
     {"name":"Path12","order":11,"path":"paths/Path12/Path12.yy",},
