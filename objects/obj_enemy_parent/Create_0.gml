@@ -65,6 +65,9 @@ movement_patrol = function() {
 }
 
 movement_patrol_from_pursue = function() {
+	/* 
+	// PREVIOUS CODE - MOVES TOWARDS START OF PATROL PATH THEN STARTS PATROLLING
+	//  - PRONE TO GETTING STUCK ON WALLS
 	stunned_update();
 	if (stunned_by_electricity) {
 		return;
@@ -77,6 +80,11 @@ movement_patrol_from_pursue = function() {
 	var _spd = global.dt_steady * get_pursue_speed();
 	var _dir = point_direction(x, y, patrol_start_target_x, patrol_start_target_y);
 	move(_spd, _dir);
+	*/
+	x = patrol_start_target_x;
+	y = patrol_start_target_y;
+	start_movement_patrol();
+	
 }
 
 movement_pursue = function() {
@@ -85,8 +93,9 @@ movement_pursue = function() {
 		return;
 	}
 	
-	if (distance_to_object(obj_player) > stop_pursuit_distance) {
+	if (distance_to_object(obj_player) > stop_pursuit_distance || collision_line(x, y, obj_player.x, obj_player.y, global.collision_layer, false, true)) {
 		start_movement_patrol_from_pursue();
+		return;
 	}
 	
 	var _spd = global.dt_steady * get_pursue_speed();

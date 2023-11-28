@@ -396,6 +396,7 @@
     {"name":"inst_68648D8E","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_FEB3850","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_435E9DFB","path":"rooms/Room_fire/Room_fire.yy",},
+    {"name":"inst_6EF3E951","path":"rooms/Room_fire/Room_fire.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -865,6 +866,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"propertyId":{"name":"room_index","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"value":"ROOMS.NEXT",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"propertyId":{"name":"ability_index","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"value":"ABILITY.WATER",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":2000.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EF3E951","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_start_level_trigger","path":"objects/obj_start_level_trigger/obj_start_level_trigger.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_start_level_trigger","path":"objects/obj_start_level_trigger/obj_start_level_trigger.yy",},"propertyId":{"name":"room_index","path":"objects/obj_start_level_trigger/obj_start_level_trigger.yy",},"value":"ROOMS.FIRE_ELECTRICITY",},
+          ],"rotation":0.0,"scaleX":1.5,"scaleY":1.0,"x":168.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRPathLayer","resourceVersion":"1.0","name":"Path_updown","colour":4278190335,"depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"pathId":{"name":"pth_updown","path":"paths/pth_updown/pth_updown.yy",},"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},

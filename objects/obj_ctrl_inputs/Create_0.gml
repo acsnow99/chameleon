@@ -9,6 +9,8 @@ global.mve_inputs_keyboard[6] = vk_left;
 global.mve_inputs_keyboard[7] = vk_down;
 global.keyboard_input_count = 8;
 
+global.button_pressed_this_room = false;
+
 alarmvar_end_ability_defaults[ABILITY.NONE] = 50000;
 alarmvar_end_ability_defaults[ABILITY.FIRE] = 5;
 alarmvar_end_ability_defaults[ABILITY.ELECTRICITY] = 5000;

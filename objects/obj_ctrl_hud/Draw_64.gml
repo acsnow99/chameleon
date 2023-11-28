@@ -33,3 +33,33 @@ if (_i > 0) {
 	}
 }
 #endregion
+
+#region text
+if (global.text_active) {
+	if (global.button_pressed_this_room) {
+		alarmvar_stop_display_text -= global.dt_steady;
+		if (alarmvar_stop_display_text <= 0) {
+			global.text_active = false;
+		}
+	}
+	draw_sprite(spr_hud_textbox, 0, 0, 0);
+	if (text_wrapped == "") {
+		text_wrapped = wrap_text(text_by_level[room_index], text_max_width);
+	}
+	draw_text(76, 410, text_wrapped);
+}
+else {
+	text_wrapped = "";
+}
+#endregion
+
+
+if (alarmvar_end_game > 0) {
+	draw_set_alpha((alarmvar_end_game_default - alarmvar_end_game)/alarmvar_end_game_default);
+	draw_rectangle(0, 0, global.view_width, global.view_height, false);
+	draw_set_alpha(1);
+	alarmvar_end_game -= global.dt_steady;
+	if (alarmvar_end_game <= 0) {
+		scr_end_game();
+	}
+}
