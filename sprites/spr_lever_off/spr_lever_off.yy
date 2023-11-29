@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_lever_off",
-  "bbox_bottom": 46,
-  "bbox_left": 25,
-  "bbox_right": 39,
-  "bbox_top": 18,
+  "bbox_bottom": 23,
+  "bbox_left": 2,
+  "bbox_right": 21,
+  "bbox_top": 2,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d2aec06-c7e6-4154-9d26-f1f240e642d9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"388581c1-216a-4f8c-8d12-8bfc39c2e3e6",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 24,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aef87e22-dd7e-493b-9820-87fe8bbfe125","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f3dc0b33-41f2-48db-bcac-8ba33fadc194","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d2aec06-c7e6-4154-9d26-f1f240e642d9","path":"sprites/spr_lever_off/spr_lever_off.yy",},},},"Disabled":false,"id":"ba2e9e37-e14c-4a75-b43c-f3efb8837392","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"388581c1-216a-4f8c-8d12-8bfc39c2e3e6","path":"sprites/spr_lever_off/spr_lever_off.yy",},},},"Disabled":false,"id":"e035aa5a-8300-4698-b827-17a16398a095","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 24,
 }
