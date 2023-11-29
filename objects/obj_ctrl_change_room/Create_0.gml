@@ -22,7 +22,7 @@ room_data[ROOMS.TUTORIAL, DATA.ROOM] = Room_tutorial;
 
 room_data[ROOMS.FIRE_ELECTRICITY, DATA.START_X] = 160;
 room_data[ROOMS.FIRE_ELECTRICITY, DATA.START_Y] = 96;
-room_data[ROOMS.FIRE_ELECTRICITY, DATA.ROOM] = Room_fire;
+room_data[ROOMS.FIRE_ELECTRICITY, DATA.ROOM] = Room_fire_electricity;
 
 room_data[ROOMS.ELECTRICITY, DATA.START_X] = 144;
 room_data[ROOMS.ELECTRICITY, DATA.START_Y] = 96;
@@ -30,7 +30,7 @@ room_data[ROOMS.ELECTRICITY, DATA.ROOM] = Room_electricity;
 
 room_data[ROOMS.FIRE, DATA.START_X] = 160;
 room_data[ROOMS.FIRE, DATA.START_Y] = 96;
-room_data[ROOMS.FIRE, DATA.ROOM] = Room_fire;
+room_data[ROOMS.FIRE, DATA.ROOM] = Room_fire_electricity;
 
 room_data[ROOMS.NEXT, DATA.START_X] = 3524;
 room_data[ROOMS.NEXT, DATA.START_Y] = 1474;

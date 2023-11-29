@@ -9,7 +9,7 @@ global.abilities_obtained[ABILITY.WATER] = false;
 global.abilities_obtained[ABILITY.DARKNESS] = false;
 global.abilities_obtained[ABILITY.TELEPORTATION] = false;
 
-global.debug = false;
+global.debug = true;
 
 if (global.debug) {
 	for (var i = 0; i < ABILITY.LENGTH; i++) {

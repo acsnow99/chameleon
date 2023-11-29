@@ -45,6 +45,7 @@
     {"name":"Path7","order":2,"path":"paths/Path7/Path7.yy",},
     {"name":"Path15","order":14,"path":"paths/Path15/Path15.yy",},
     {"name":"Path9","order":4,"path":"paths/Path9/Path9.yy",},
+    {"name":"Room_fire","order":6,"path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"obj_door","order":10,"path":"objects/obj_door/obj_door.yy",},
     {"name":"Path2","order":5,"path":"paths/Path2/Path2.yy",},
     {"name":"obj_ctrl_progress","order":22,"path":"objects/obj_ctrl_progress/obj_ctrl_progress.yy",},
