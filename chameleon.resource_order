@@ -36,6 +36,7 @@
     {"name":"spr_finish_trigger","order":17,"path":"sprites/spr_finish_trigger/spr_finish_trigger.yy",},
     {"name":"obj_enemy_water","order":23,"path":"objects/obj_enemy_water/obj_enemy_water.yy",},
     {"name":"Path5","order":8,"path":"paths/Path5/Path5.yy",},
+    {"name":"Path21","order":30,"path":"paths/Path21/Path21.yy",},
     {"name":"spr_enemy_water","order":19,"path":"sprites/spr_enemy_water/spr_enemy_water.yy",},
     {"name":"obj_environment_water","order":13,"path":"objects/obj_environment_water/obj_environment_water.yy",},
     {"name":"obj_ctrl_setup_next_room","order":24,"path":"objects/obj_ctrl_setup_next_room/obj_ctrl_setup_next_room.yy",},
