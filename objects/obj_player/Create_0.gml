@@ -21,6 +21,8 @@ movement_state = MOVEMENT_STATES.FREE_MOVEMENT;
 
 sprite_index = spr_player;
 global.current_ability = ABILITY.NONE;
+image_speed_default = 1;
+image_speed = image_speed_default;
 
 base_move_speed = 350;
 
@@ -63,8 +65,23 @@ movement_free = function() {
 		}
 	
 	}
+	
+	if (_xinput == 1) {
+		image_angle = 90;
+	}
+	else if (_yinput == -1) {
+		image_angle = 180;
+	}
+	else if (_xinput == -1) {
+		image_angle = 270;
+	}
+	else if (_yinput == 1) {
+		image_angle = 0;
+	}
+	
 	var _dir = point_direction(0, 0, _xinput, _yinput);
-	if (_xinput == 0 && _yinput == 0) _spd = 0;
+	if (_xinput == 0 && _yinput == 0) { _spd = 0; image_speed = 0; }
+	else { image_speed = image_speed_default; }
 	
 	move(_spd, _dir);
 	
