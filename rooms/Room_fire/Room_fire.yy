@@ -114,7 +114,6 @@
     {"name":"inst_16F9C5C8","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_237316F3","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_6576DAEA","path":"rooms/Room_fire/Room_fire.yy",},
-    {"name":"inst_719F0CFC","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_749B92DF","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_A7B33A5","path":"rooms/Room_fire/Room_fire.yy",},
     {"name":"inst_6414335B","path":"rooms/Room_fire/Room_fire.yy",},
@@ -219,7 +218,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75929C65","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":1536.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4865CDCC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":1536.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5AF33AB2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"propertyId":{"name":"room_index","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"value":"ROOMS.TUTORIAL",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"propertyId":{"name":"room_index","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"value":"ROOMS.FIRE_ELECTRICITY",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_finish_level_trigger","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"propertyId":{"name":"ability_index","path":"objects/obj_finish_level_trigger/obj_finish_level_trigger.yy",},"value":"ABILITY.ELECTRICITY",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1536.0,"y":2208.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B299E14","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[
@@ -240,9 +239,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6576DAEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"patrol_path","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"Path26",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":784.0,"y":816.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_719F0CFC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"patrol_path","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"Path27",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":1200.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_749B92DF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"patrol_path","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"Path28",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":1440.0,},
@@ -285,8 +281,8 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":1600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "chameleon",
-    "path": "chameleon.yyp",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
