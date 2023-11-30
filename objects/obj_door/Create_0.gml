@@ -7,12 +7,14 @@ open = function() {
 	x = -1000;
 	y = -1000;
 	is_open = true;
+	audio_play_sound(snd_fx_door_open, 1, false);
 }
 
 close = function() {
 	x = original_x;
 	y = original_y;
 	is_open = false;
+	audio_play_sound(snd_fx_door_open, 1, false);
 }
 
 toggle = function() {

@@ -5,6 +5,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -35,8 +36,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_door_closed",
-    "path": "sprites/spr_door_closed/spr_door_closed.yy",
+    "name": "spr_door_open",
+    "path": "sprites/spr_door_open/spr_door_open.yy",
   },
   "spriteMaskId": null,
   "visible": true,

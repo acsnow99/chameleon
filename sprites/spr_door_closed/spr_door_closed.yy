@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_door_closed",
   "bbox_bottom": 47,
-  "bbox_left": 0,
-  "bbox_right": 47,
+  "bbox_left": 10,
+  "bbox_right": 39,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0465346-6cea-49c8-b0ae-8647be456c08",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3830506d-83f0-4815-9576-5439c4cf856d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fc3e7c41-a4eb-4d3e-b452-cd03503285d2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"92a1bb90-0d6e-4d2e-8866-368863c8e285","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e0465346-6cea-49c8-b0ae-8647be456c08","path":"sprites/spr_door_closed/spr_door_closed.yy",},},},"Disabled":false,"id":"5696177b-1467-470c-b069-44769b89b55a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3830506d-83f0-4815-9576-5439c4cf856d","path":"sprites/spr_door_closed/spr_door_closed.yy",},},},"Disabled":false,"id":"82a2baf9-2699-4ec5-9bf3-d43db5bfda78","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
