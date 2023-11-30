@@ -21,6 +21,8 @@ movement_state = MOVEMENT_STATES.FREE_MOVEMENT;
 
 sprite_index = spr_player;
 global.current_ability = ABILITY.NONE;
+image_speed_default = 1;
+image_speed = image_speed_default;
 
 base_move_speed = 350;
 
@@ -63,8 +65,28 @@ movement_free = function() {
 		}
 	
 	}
+	
+	if (_xinput == 1) {
+		image_angle = 90;
+	}
+	else if (_yinput == -1) {
+		image_angle = 180;
+	}
+	else if (_xinput == -1) {
+		image_angle = 270;
+	}
+	else if (_yinput == 1) {
+		image_angle = 0;
+	}
+	
 	var _dir = point_direction(0, 0, _xinput, _yinput);
-	if (_xinput == 0 && _yinput == 0) _spd = 0;
+	if (_xinput == 0 && _yinput == 0) { 
+		_spd = 0; image_speed = 0; 
+	}
+	else { 
+		image_speed = image_speed_default; 
+		try_play_water_step_sound();
+	}
 	
 	move(_spd, _dir);
 	
@@ -145,3 +167,31 @@ change_sprite = function() {
 			break;
 	}
 }
+
+play_sounds = function() {
+	if (global.current_ability == ABILITY.FIRE and !audio_is_playing(snd_fx_fire_player)) {
+		audio_play_sound(snd_fx_fire_player, 0.75, true);
+	}
+	if (global.current_ability != ABILITY.FIRE) {
+		audio_stop_sound(snd_fx_fire_player);
+	}
+}
+
+try_play_water_step_sound = function() {
+	if (place_meeting(x, y, obj_environment_water) and !audio_is_playing(snd_fx_water0) and !audio_is_playing(snd_fx_water1) and !audio_is_playing(snd_fx_water2)) {
+		var _i = irandom(2);
+		switch (_i) {
+			case 0:
+				var _snd = snd_fx_water0;
+				break;
+			case 1:
+				var _snd = snd_fx_water1;
+				break;
+			case 2:
+				var _snd = snd_fx_water2;
+				break;
+		}
+		audio_play_sound(_snd, 0.75, false);
+	}
+}
+

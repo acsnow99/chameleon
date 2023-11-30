@@ -10,6 +10,8 @@ for (var i = 0; i < global.keyboard_input_count; i++) {
 }
 
 
+global.button_pressed_exit = keyboard_check_pressed(global.input_exit_game);
+
 
 for (var i = 0; i < ABILITY.LENGTH; i++) {
 	if (keyboard_check(ord(string(i)))) {
@@ -42,3 +44,4 @@ for (var i = 0; i < ABILITY.LENGTH; i++) {
 }
 
 ability_update();
+try_exit_game();

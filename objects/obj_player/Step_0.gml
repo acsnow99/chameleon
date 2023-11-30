@@ -1,5 +1,6 @@
 change_sprite();
 check_caught();
+play_sounds();
 
 check_for_burning();
 
