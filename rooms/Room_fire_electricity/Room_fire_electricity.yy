@@ -454,7 +454,7 @@
           ],"rotation":0.0,"scaleX":0.6666667,"scaleY":0.6666667,"x":1712.0,"y":624.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25A15A06","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},"propertyId":{"name":"key","path":"objects/obj_lever/obj_lever.yy",},"value":"2",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":64.0,},
+          ],"rotation":0.0,"scaleX":0.6666667,"scaleY":0.6666667,"x":336.0,"y":80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67AE2387","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_electricity","path":"objects/obj_enemy_electricity/obj_enemy_electricity.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"patrol_path","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"Path2",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":720.0,"y":128.0,},
