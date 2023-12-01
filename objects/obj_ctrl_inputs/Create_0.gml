@@ -16,7 +16,7 @@ global.button_pressed_this_room = false;
 global.button_pressed_exit = false;
 
 alarmvar_end_ability_defaults[ABILITY.NONE] = 50000;
-alarmvar_end_ability_defaults[ABILITY.FIRE] = 5;
+alarmvar_end_ability_defaults[ABILITY.FIRE] = 4;
 alarmvar_end_ability_defaults[ABILITY.ELECTRICITY] = 5000;
 alarmvar_end_ability_defaults[ABILITY.WATER] = 5000;
 alarmvar_end_ability_defaults[ABILITY.DARKNESS] = 5000;
@@ -26,7 +26,7 @@ alarmvar_end_ability = 0;
 alarmvar_cooldown_ability_defaults[ABILITY.NONE] = 0;
 alarmvar_cooldown_ability_defaults[ABILITY.FIRE] = 3;
 alarmvar_cooldown_ability_defaults[ABILITY.ELECTRICITY] = 2;
-alarmvar_cooldown_ability_defaults[ABILITY.WATER] = 5;
+alarmvar_cooldown_ability_defaults[ABILITY.WATER] = 3;
 alarmvar_cooldown_ability_defaults[ABILITY.DARKNESS] = 10;
 alarmvar_cooldown_ability_defaults[ABILITY.TELEPORTATION] = 5;
 alarmvar_cooldown_ability[ABILITY.NONE] = 0;
