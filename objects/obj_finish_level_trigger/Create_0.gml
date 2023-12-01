@@ -1,6 +1,6 @@
 
 self_next_room = function() {
-	if (ability_index != ABILITY.NONE) {
+	if (ability_index != ABILITY.NONE and global.num_abilities_obtained < 2) {
 		global.num_abilities_obtained++;
 		global.abilities_obtained[ability_index] = true;
 	}
