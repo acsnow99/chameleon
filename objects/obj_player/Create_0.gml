@@ -104,6 +104,9 @@ use_ability = function() {
 			}
 			break;
 		case ABILITY.ELECTRICITY:
+			if (!audio_is_playing(snd_fx_elec_player)) {
+				audio_play_sound(snd_fx_elec_player, 1, false);
+			}
 			with(obj_lever) {
 				if (distance_to_object(obj_player) < 40) {
 					toggle();
@@ -174,6 +177,13 @@ play_sounds = function() {
 	}
 	if (global.current_ability != ABILITY.FIRE) {
 		audio_stop_sound(snd_fx_fire_player);
+	}
+	
+	if (global.current_ability == ABILITY.ELECTRICITY and !audio_is_playing(snd_fx_elec_player_background)) {
+		audio_play_sound(snd_fx_elec_player_background, 0.75, true);
+	}
+	if (global.current_ability != ABILITY.ELECTRICITY) {
+		audio_stop_sound(snd_fx_elec_player_background);
 	}
 }
 

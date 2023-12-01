@@ -1,4 +1,10 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"snd_fx_elec_player","order":1,"path":"sounds/snd_fx_elec_player/snd_fx_elec_player.yy",},
+    {"name":"snd_fx_switch_on","order":4,"path":"sounds/snd_fx_switch_on/snd_fx_switch_on.yy",},
+    {"name":"snd_fx_finish_room","order":3,"path":"sounds/snd_fx_finish_room/snd_fx_finish_room.yy",},
+    {"name":"snd_fx_switch_off","order":5,"path":"sounds/snd_fx_switch_off/snd_fx_switch_off.yy",},
+    {"name":"snd_fx_elec_player_background","order":2,"path":"sounds/snd_fx_elec_player_background/snd_fx_elec_player_background.yy",},
+  ],
 }
