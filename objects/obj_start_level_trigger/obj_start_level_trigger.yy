@@ -35,5 +35,5 @@
     "path": "sprites/spr_finish_trigger/spr_finish_trigger.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

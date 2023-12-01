@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_wood",
-    "path": "sprites/spr_wood/spr_wood.yy",
+    "name": "spr_wood_burning",
+    "path": "sprites/spr_wood_burning/spr_wood_burning.yy",
   },
   "spriteMaskId": null,
   "visible": true,
