@@ -241,7 +241,7 @@
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":784.0,"y":816.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A7B33A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_fire","path":"objects/obj_enemy_fire/obj_enemy_fire.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"patrol_path","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"Path29",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":1440.0,},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":1200.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6414335B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy_electricity","path":"objects/obj_enemy_electricity/obj_enemy_electricity.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"patrol_path","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"Path31",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":2208.0,},
